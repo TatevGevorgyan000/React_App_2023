@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.Container {
+    max-width: 1100px;
+    margin:  20px auto;
+    background-color: #dedede;
+    text-align: center;
+}
+
+.MyForm {
+    border: 2px solid #111;
+    width: 400px;
+    margin: 20px auto;
+    padding: 2rem;
+    &>div {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        &.row {
+            label {
+                width: 100%;
+                input {
+                    float: left;
+                    width: 20%;
+                }
+            }
+        }
+        input {
+            width: 100%;
+            margin: 10px 0;
+            padding: 1rem;
+            border-radius: 6px;
+            border: 1px solid grey;
+        }
+        label {
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 1px;
+            .label-box {
+                font-weight: 400;
+                font-size: 16px;
+            }
+        }
+    }
+    .errors { 
+        color: red;
+        font-size: 12px;
+    }
+}

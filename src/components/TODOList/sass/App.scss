@@ -1,0 +1,17 @@
+@import "./mixins";
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Container {
+    width: 96%;
+    margin: 0 auto;
+    padding: 1rem;
+    @include myFlex(column,center,20px)
+}

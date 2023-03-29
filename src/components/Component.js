@@ -1,14 +1,11 @@
 import React from 'react'
 
-function Component({list, handeleClick}) {
+function Component({obj}) {
   return (
-    <div>
-        {
-            list.map((elem,index) => {
-                return <p key={index}>{elem}</p>
-            })
-        }
-      <button onClick={handeleClick}>Click</button>
+    <div className='user'>
+       {Object.keys(obj).map(elem => {
+        return <h1>{elem} : {obj[elem]}</h1>
+       })}
     </div>
   )
 }

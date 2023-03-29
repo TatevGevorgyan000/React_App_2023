@@ -1,0 +1,41 @@
+@import "./mixins";
+
+.Form {
+    background-color: #f2f2f2;
+    width: 50%;
+    padding: 1rem;
+
+    &-Input {
+        @include myFlex(column,flex-start,5px);
+        width: 100%;
+        margin: 10px;
+        input, select, textarea {
+            padding: 12px 16px;
+            border-radius: 6px;
+            border: 1px solid rgba(128, 128, 0.688);
+            width: 96%;
+            margin: 10px 0;
+            font-size: 20px;
+            resize: none; //vor textareai chapy chkaroxananq poxel
+        }
+        label {
+            font-variant: small-caps;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+        &_submit {
+            input {
+                background-color: orangered;
+                color: #fff;
+                cursor: pointer;
+                transition: 0.3s;
+                &:hover {
+                    transform: translateY(-4px);
+                    background-color: green;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+}

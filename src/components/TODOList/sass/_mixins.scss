@@ -1,0 +1,7 @@
+@mixin myFlex($dir, $ai, $gap) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: flex-start;
+    align-items: $ai;
+    gap: $gap;
+}

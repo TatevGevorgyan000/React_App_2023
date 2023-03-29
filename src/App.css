@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+/* button {
+    border: none;
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(237, 81, 81);
+} */
+
+.Users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem;
+}
+
+.Users >article{
+    flex: 0 0 30%;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 10px 5px 5px rgb(247, 243, 127);
+    background-color: #eaf1e8;
+    position: relative;
+}
+
+.delete-btn{
+    top: 15px;
+    right: 10px;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+}
